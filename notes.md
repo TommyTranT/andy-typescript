@@ -1,1 +1,0 @@
-This is notes on typescript based off Andys lecture.
