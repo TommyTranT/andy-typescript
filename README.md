@@ -14,5 +14,8 @@ ts => typescript transpiler => js
 * Only accepts what you tell it to accept. 
 * Won't compile if what you input is not correct
 
-9:30
+# Download 
+- npm i -g typescript
+- tsc -v will check typescript version
+
 
