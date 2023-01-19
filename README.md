@@ -18,4 +18,6 @@ ts => typescript transpiler => js
 - npm i -g typescript
 - tsc -v will check typescript version
 
+# Changing the default language to ES6
+- tsc 01_basics.ts --target es2016
 
