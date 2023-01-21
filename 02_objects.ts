@@ -28,7 +28,10 @@ interface SuperUser extends UserB {
 
 // We can use interface within an interface. UserC will have the type "Dog" and have an array of Friends
 
+// Dogs id is an optional type. it may or may not be there
+
 interface Dog {
+  id?: number;
   name: string;
   faveToy: string;
   age: boolean;
@@ -38,7 +41,7 @@ interface UserC {
   username: string;
   password: string;
   friends: UserC[];
-  dog: Dog;
+  dog?: Dog;          // Dog existing for UserC is optional because of '?'
 }
 
 const userC: UserC = {
