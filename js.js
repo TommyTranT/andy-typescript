@@ -7,7 +7,7 @@
 // const items = ["cheese", "cheese", "pizza", "hotdog", "pizza"];
 
 // console.log(help(items));
-let num = 1;
+// let num = 1;
 
-console.log(num);
-let num = 2;
+// console.log(num);
+// let num = 2;
