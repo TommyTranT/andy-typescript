@@ -10,12 +10,39 @@ const userA: {
 // However, this is not the optimal way to do it and can be hard to read.
 // To create your own type, you should create an "Interface" that can be used like "string" or "number".
 
-interface User {
+interface UserB {
   username: string;
   password: string;
 }
 
-const userB: User = {
+const userB: UserB = {
   username: 'tommytran100',
   password: '1234'
-// }
+};
+
+// Extend initial User interface to add more types. SuperUser would include everything from User(username and password) plus the admin
+
+interface SuperUser extends UserB {
+  admin: boolean;
+};
+
+// We can use interface within an interface. UserC will have the type "Dog" and have an array of Friends
+
+interface Dog {
+  name: string;
+  faveToy: string;
+  age: boolean;
+}
+
+interface UserC {
+  username: string;
+  password: string;
+  friends: UserC[];
+  dog: Dog;
+}
+
+const userC: UserC = {
+  username: 'tommytran100',
+  password: '1234',
+  friends: []
+}
