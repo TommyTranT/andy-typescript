@@ -10,3 +10,14 @@ const sayHello = (name: string, age?: number): string => {
 sayHello('Tommy', 42);
 sayHello('Tommy');
 
+// FUNCTION RETURNS PROMISE
+
+// function requires a number that will resolve in a promise and return a number
+const returningPromise = (arg: number): Promise<number> => {
+  return new Promise((resolve) => {
+    resolve(arg);
+  })
+}
+
+returningPromise(42)
+  .then(data => {})
