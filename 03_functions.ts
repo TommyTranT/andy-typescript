@@ -21,3 +21,4 @@ const returningPromise = (arg: number): Promise<number> => {
 
 returningPromise(42)
   .then(data => {})
+
