@@ -21,3 +21,6 @@ ts => typescript transpiler => js
 # Changing the default language to ES6
 - tsc 01_basics.ts --target es2016
 
+# Creating a Typescript json file
+- Make sure its on the top level floor
+- type `tsc --init`
