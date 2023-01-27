@@ -24,3 +24,14 @@ ts => typescript transpiler => js
 # Creating a Typescript json file
 - Make sure its on the top level floor
 - type `tsc --init`
+
+- `outDir` - determines where all of the js files will be outputed
+- run `tsc` on any level to compile code
+
+- Typically, gitignore the build files
+
+# tsc --watch
+This will automatically compile new js file when we save or make new tsc files
+
+# Using in React
+- `npx create-react-app my-app --template typescript` to create react app with typescript
